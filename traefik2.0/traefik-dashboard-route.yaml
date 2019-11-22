@@ -17,7 +17,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`traefik.k8s.xkcoding.com`)
+    - match: Host(`traefik.xkcoding.com`)
       kind: Rule
       services:
         - name: traefik
@@ -37,7 +37,7 @@ spec:
     secretName: xkcoding-tls
     # certResolver: default
   routes:
-    - match: Host(`traefik.k8s.xkcoding.com`)
+    - match: Host(`traefik.xkcoding.com`)
       kind: Rule
       services:
         - name: traefik
